@@ -19,7 +19,10 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
 import java.util.ArrayList;
 import java.util.List;
@@ -42,6 +45,9 @@ public class GoogleCloudServices implements ICloudServices{
     @Value("${google.project.id}")
     private String projectId;
 
+    @Value("${google.service.account.credentials.json}")
+    private String serviceAccountCredentials;
+
     private static String client_email; //"709560193674-compute@developer.gserviceaccount.com";
 
     @Value("${google.snapshot.name}")
@@ -53,8 +59,9 @@ public class GoogleCloudServices implements ICloudServices{
 
 
     private GoogleCredential authenticate() throws IOException {
-        Resource resource = new ClassPathResource("google_cred.json");
-        GoogleCredential credential = GoogleCredential.fromStream(resource.getInputStream()).createScoped(ComputeScopes.all());
+
+        InputStream stream = new ByteArrayInputStream(serviceAccountCredentials.getBytes(StandardCharsets.UTF_8));
+        GoogleCredential credential = GoogleCredential.fromStream(stream).createScoped(ComputeScopes.all());
         client_email = credential.getServiceAccountId();
         return credential;
     }
