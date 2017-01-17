@@ -75,7 +75,8 @@ CloudProvider:<br />
 			"targets": []
 		  }
 	  ]
-  }```
+  }
+  ```
   <br />
   you are responsible to set the number of servers on each vm. <br />
   
