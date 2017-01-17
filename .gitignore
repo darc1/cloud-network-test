@@ -88,7 +88,8 @@ target/
 
 #tests dir
 tests/
-
+iperf3/
+ICMP/
 #aws keypairs
 aws_key_pairs
 
