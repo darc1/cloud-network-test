@@ -26,14 +26,15 @@ public class Utils {
 
     public static String createTestDir(String testId, String testType) throws IOException {
 
-        Path iperf3 = Paths.get(testType);
-        if (!Files.exists(iperf3)) {
-            Files.createDirectory(iperf3);
+        Path baseDir = Paths.get(testType);
+        if (!Files.exists(baseDir)) {
+            Files.createDirectory(baseDir);
         }
         String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
         String testDir = testId + "_" + timeStamp;
-        Files.createDirectory(Paths.get(testDir));
-        return testDir;
+        Path dir = Paths.get(baseDir.toString(), testDir);
+        Files.createDirectory(dir);
+        return dir.toString();
     }
 
     public static <T> void writeObjectToFile(String testDir, StringBuilder fileName, T objectToWrite) {
