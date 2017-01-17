@@ -47,7 +47,9 @@ CloudProvider:<br />
   f. aws.base.image.name (the image name from aws bullet 10)<br />
   g. aws.base.image.region (the image region from aws bullet 10 e.g:us-west-2)<br />
   i. set cloud.aws.credentials.accessKey, cloud.aws.credentials.secretKey<br />
-  
+ 
+ run manager, and verify it's up:
+ GET http://{manager-ip}:8080/manager/test
 2. running bandwidth test:<br />
   Api: POST http://{manager-ip}:8080/manager/run/bandwidth<br />
   Json class: BandwidthTest.java<br />
