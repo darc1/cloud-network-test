@@ -1,0 +1,12 @@
+ap-south-1->us-west-1
+start: 4
+end: 243
+ap-south-1->us-west-1
+start: 247
+end: 486
+ap-south-1->us-west-1
+start: 490
+end: 729
+ap-south-1->us-west-1
+start: 733
+end: 972

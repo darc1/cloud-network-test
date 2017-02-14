@@ -1,0 +1,90 @@
+us-central1-a->us-west1-a
+start: 4
+end: 93
+us-central1-a->asia-northeast1-a
+start: 97
+end: 186
+asia-east1-a->us-east1-d
+start: 190
+end: 279
+us-central1-a->europe-west1-d
+start: 283
+end: 372
+us-west1-a->europe-west1-d
+start: 376
+end: 465
+asia-northeast1-a->europe-west1-d
+start: 469
+end: 558
+us-west1-a->asia-northeast1-a
+start: 562
+end: 651
+us-east1-d->europe-west1-d
+start: 655
+end: 744
+europe-west1-d->asia-northeast1-a
+start: 748
+end: 837
+us-east1-d->us-central1-a
+start: 841
+end: 930
+us-central1-a->asia-east1-a
+start: 934
+end: 1023
+asia-northeast1-a->us-east1-d
+start: 1027
+end: 1116
+europe-west1-d->us-central1-a
+start: 1120
+end: 1209
+us-west1-a->us-central1-a
+start: 1213
+end: 1302
+asia-east1-a->us-west1-a
+start: 1306
+end: 1395
+asia-northeast1-a->asia-east1-a
+start: 1399
+end: 1488
+asia-northeast1-a->us-central1-a
+start: 1492
+end: 1581
+us-east1-d->asia-northeast1-a
+start: 1585
+end: 1674
+europe-west1-d->asia-east1-a
+start: 1678
+end: 1767
+asia-northeast1-a->us-west1-a
+start: 1771
+end: 1860
+us-central1-a->us-east1-d
+start: 1864
+end: 1953
+asia-east1-a->asia-northeast1-a
+start: 1957
+end: 2046
+us-west1-a->us-east1-d
+start: 2050
+end: 2139
+us-east1-d->us-west1-a
+start: 2143
+end: 2232
+us-west1-a->asia-east1-a
+start: 2236
+end: 2325
+europe-west1-d->us-west1-a
+start: 2329
+end: 2418
+asia-east1-a->us-central1-a
+start: 2422
+end: 2511
+europe-west1-d->us-east1-d
+start: 2515
+end: 2604
+us-east1-d->asia-east1-a
+start: 2608
+end: 2697
+asia-east1-a->europe-west1-d
+start: 2701
+end: 2790

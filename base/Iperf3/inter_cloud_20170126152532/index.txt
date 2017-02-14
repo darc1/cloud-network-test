@@ -1,0 +1,24 @@
+us-west-2->us-west1-a
+start: 4
+end: 123
+eu-central-1->europe-west1-d
+start: 127
+end: 246
+us-west1-a->us-west-2
+start: 250
+end: 369
+us-west1-a->us-west-2
+start: 373
+end: 492
+europe-west1-d->eu-central-1
+start: 496
+end: 615
+eu-central-1->europe-west1-d
+start: 619
+end: 738
+us-west-2->us-west1-a
+start: 742
+end: 861
+europe-west1-d->eu-central-1
+start: 865
+end: 984
