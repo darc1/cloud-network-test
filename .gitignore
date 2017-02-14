@@ -88,7 +88,18 @@ target/
 
 #tests dir
 tests/
-iperf3/
-ICMP/
+base/iperf3/
+base/ICMP/
+base/IperfLongRun
 #aws keypairs
 aws_key_pairs
+
+base/orchestrator/my_demo.log
+base/orchestrator/.mvn/
+
+base/sampler/my_demo.log
+base/sampler/.mvn/
+
+base/.mvn/
+
+
